@@ -8,7 +8,7 @@ from PIL import Image
 
 @st.cache(suppress_st_warning=True)
 def lit_données():
-        chemin_accès = "initial_version\\project\\s&p500.csv"
+        chemin_accès = "s&p500.csv"
         data = pd.read_csv(chemin_accès)
         return data
 
@@ -94,7 +94,7 @@ if __name__ == "__main__":
 st.title("Analyse et visualisation S&P500")
 st.sidebar.title("Critères de recherche")
 
-image = Image.open("initial_version\\exercices\\streamlit_basics\\stock.jpeg")
+image = Image.open("stock.jpeg")
 _, colonne_image_2, _ = st.columns([1,3,1])
 with colonne_image_2:
        st.image(image, caption='@austindistel')
