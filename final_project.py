@@ -82,14 +82,19 @@ def  métriques(prix):
     performance = np.around((prix_action_2022/prix_action_2012 - 1)*100, 2)
     return prix_action_2022, performance
 
-
+""" Programme prinicpal 
+    -------------------
+"""
 
 if __name__ == "__main__":
+        
     st.set_page_config(
         page_title="Mon projet Streamlit",
         page_icon="📈",
         initial_sidebar_state="expanded"
     )
+
+## Titre des parties principale et latérale
 
 st.title("Analyse et visualisation S&P500")
 st.sidebar.title("Critères de recherche")
