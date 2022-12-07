@@ -82,9 +82,6 @@ def  métriques(prix):
     performance = np.around((prix_action_2022/prix_action_2012 - 1)*100, 2)
     return prix_action_2022, performance
 
-""" Programme prinicpal 
-    -------------------
-"""
 
 if __name__ == "__main__":
         
